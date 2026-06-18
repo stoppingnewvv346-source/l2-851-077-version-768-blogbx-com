@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>影片搜索-精选电影-精选电影合集片库-高清免费在线观看</title>
+  <meta name="description" content="搜索精选电影片库，按影片标题、地区、类型、年份、标签和简介快速定位可在线观看内容。">
+  <meta name="keywords" content="精选电影,电影合集,高清电影,电影片库,在线观看,热门影片,影片搜索">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="./assets/styles.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="container-custom header-inner">
+    <a class="brand" href="./index.html" aria-label="精选电影">
+      <span class="brand-mark">影</span>
+      <span class="brand-text">精选电影</span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link" href="./categories.html">分类</a>
+      <a class="nav-link" href="./library.html">片库</a>
+      <a class="nav-link" href="./ranking.html">排行榜</a>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片、地区、标签" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobile-nav">
+    <div class="container-custom mobile-nav-inner">
+      <a class="mobile-link" href="./index.html">首页</a>
+      <a class="mobile-link" href="./categories.html">分类</a>
+      <a class="mobile-link" href="./library.html">片库</a>
+      <a class="mobile-link" href="./ranking.html">排行榜</a>
+      <form class="mobile-search" action="./search.html" method="get">
+        <input type="search" name="q" placeholder="搜索精选电影" aria-label="移动端搜索">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero slate-hero">
+    <div class="container-custom">
+      <span class="eyebrow light">搜索</span>
+      <h1>影片搜索</h1>
+      <p>输入片名、标签、地区或年份，快速查找精选电影片库内容。</p>
+      <form action="./search.html" method="get" class="page-search-form">
+        <input type="search" name="q" id="search-page-input" placeholder="搜索影片" aria-label="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="container-custom page-content">
+    <div class="search-tools">
+      <label>
+        <span>排序</span>
+        <select id="search-sort">
+          <option value="score">热度优先</option>
+          <option value="latest">新近优先</option>
+          <option value="title">片名排序</option>
+        </select>
+      </label>
+    </div>
+    <div class="movie-grid" id="search-results"></div>
+    <div class="empty-state" id="search-empty" hidden>没有找到匹配的影片</div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container-custom footer-grid">
+    <div>
+      <a class="footer-brand" href="./index.html">精选电影</a>
+      <p>精选电影栏目聚合多类型影片内容，兼顾热度与口碑，提供清晰的片库浏览体验。</p>
+    </div>
+    <div class="footer-links">
+      <a href="./categories.html">分类浏览</a>
+      <a href="./library.html">完整片库</a>
+      <a href="./ranking.html">热门排行</a>
+      <a href="./search.html">影片搜索</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 精选电影 · 高清片在线观看</div>
+</footer>
+<script src="./assets/movies-data.js"></script>
+<script src="./assets/app.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
